@@ -126,6 +126,7 @@ async def unknown(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Main function
 def main():
+    print("✅ Bot is starting... connecting to Telegram...")
     app = Application.builder().token(TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
